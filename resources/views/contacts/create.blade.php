@@ -1,17 +1,21 @@
-<html>
+@extends('layouts.app')
 
-<div class="col">
+@section('content')
+
+<div class="col ml-5">
     <form method="POST" action="{{ route('contacts.store') }}" enctype="multipart/form-data">
         @csrf
 
         <div class="row">
             <div class="form-group">
+            <label class="small mb-1">Name</label>
                 <input class="form-control" name="name" id="inputUsername" type="text"/>
             </div>
         </div>
 
         <div class="row">
             <div class="form-group">
+            <label class="small mb-1">Number</label>
                 <input class="form-control" name="number" id="inputUsername" type="text"/>
             </div>
         </div>
@@ -23,7 +27,7 @@
                     required></textarea>
             </div>
         </div>
-        
+
         <div class="row">
             <hr class="my-4" />
             <div class="d-flex justify-content-between">
@@ -34,4 +38,4 @@
     </form>
 </div>
 
-</html>
+@endsection

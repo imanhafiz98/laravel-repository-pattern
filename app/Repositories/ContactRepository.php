@@ -24,7 +24,6 @@ class ContactRepository
         return $contact;
     }
 
-
     public function store($request)
     {
         $request->validate([

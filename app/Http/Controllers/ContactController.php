@@ -8,7 +8,7 @@ use App\Repositories\ContactRepository;
 
 class ContactController extends Controller
 {
-    private $contactRepository;
+    private ContactRepository $contactRepository;
 
         public function _construct(ContactRepository $contactRepository)
         {
