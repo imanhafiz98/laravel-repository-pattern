@@ -22,4 +22,18 @@ class ContactController extends Controller
 
         return $contact;
     }
+
+    public function create()
+    {
+        return view('contacts.create');   
+    }
+
+    public function store(Request $request)
+    {
+        //dd($request->all());
+
+        $contact = $this->contactRepository->store($request);
+
+        return redirect(route('contacts.create'));
+    }
 }

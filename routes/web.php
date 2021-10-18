@@ -22,4 +22,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+//CONTACT
+
 Route::get('/', [ContactController::class, 'index']);
+Route::get('/contact/create', [ContactController::class, 'create'])->name('contacts.create');
+Route::post('/contact//store', 'ContactController@store')->name('contacts.store'); 
+

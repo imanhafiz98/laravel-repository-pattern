@@ -23,4 +23,22 @@ class ContactRepository
 
         return $contact;
     }
+
+
+    public function store($request)
+    {
+        $request->validate([
+            'name' => 'required',
+            'number' => 'required',
+            'notes' => 'required'
+            ]);
+
+            $contact = Contact::create([
+             'name' => $request->name,
+             'number' => $request->number, 
+             'notes' => $request->notes
+         ]);
+
+        return redirect(route('contacts.create'));
+    }
 }

@@ -17,7 +17,7 @@ class CreateContactsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('number');
-            $table->boolean('active');
+            $table->string('notes');
             $table->timestamps();
         });
     }
