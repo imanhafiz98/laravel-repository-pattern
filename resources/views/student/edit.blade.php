@@ -1,6 +1,9 @@
 @extends('layouts.master')
+
 @section('title' ,'Edit')
+
 @section('main_content')
+
 <div class="row justify-content-center">
     <div class="col-6">
         <h2 class="text-center">Edit Student</h2>

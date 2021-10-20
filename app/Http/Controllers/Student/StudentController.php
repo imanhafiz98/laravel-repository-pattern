@@ -34,13 +34,13 @@ class StudentController extends Controller
 
         $data = $request->only(['name','roll']);
         
-        if(!is_null($id)){ //update
+        if(!is_null($id)){
 
             $this->student->storeOrUpdate($id,$data);
 
             return redirect()->route('student.index')->with('message','Data Updated!');
 
-        }else{//insert
+        }else{
 
             $this->student->storeOrUpdate($id = null,$data);
 

@@ -8,15 +8,15 @@
 
         <div class="row">
             <div class="form-group">
-            <label class="small mb-1">Name</label>
-                <input class="form-control" name="name" id="inputUsername" type="text"/>
+                <label class="small mb-1">Name</label>
+                <input class="form-control" name="name" id="inputUsername" type="text" />
             </div>
         </div>
 
         <div class="row">
             <div class="form-group">
-            <label class="small mb-1">Number</label>
-                <input class="form-control" name="number" id="inputUsername" type="text"/>
+                <label class="small mb-1">Number</label>
+                <input class="form-control" name="number" id="inputUsername" type="text" />
             </div>
         </div>
 

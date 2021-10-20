@@ -28,6 +28,8 @@ Route::get('/', [ContactController::class, 'index']);
 Route::get('/contact/create', [ContactController::class, 'create'])->name('contacts.create');
 Route::post('/contact/store', 'ContactController@store')->name('contacts.store'); 
 
+//STUDENT
+
 Route::name('student.')->prefix('student')->namespace('Student')->group(function (){
     Route::get('index','StudentController@index')->name('index');
     Route::post('store','StudentController@storeOrUpdate')->name('store');

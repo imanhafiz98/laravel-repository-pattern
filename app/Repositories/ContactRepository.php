@@ -22,6 +22,7 @@ class ContactRepository
         });
 
         return $contact;
+
     }
 
     public function store($request)
@@ -39,5 +40,6 @@ class ContactRepository
          ]);
 
         return redirect(route('contacts.create'));
+        
     }
 }
